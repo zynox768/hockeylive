@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scoreslive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(102,187,69);
+}
+
+.scoresresults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: aliceblue;
+}
+
+.flagpng img {
+  width: 100px;
+  box-shadow: 0px 0px 10px 0px rgba(7, 220, 213, 0.486);
+  overflow: clip;
+}
+
+.alert {
+  margin: 20px;
+  width: 80%;
+  text-align: center;
+  justify-self: start;
+  justify-content: space-around;
+  background-color: #b66060;
+  border: #282c34;
+  border-radius: 60px;
+  box-shadow: 0px 0px 10px 0px #ccc;
+  transition: all 0.3s ease-in-out;
+  animation: slide-in 0.5s ease-in-out;
+}
+
+.alert {
+  --bs-alert-color: #149300;
+  --bs-alert-bg: #7413ea;
+  --bs-alert-border-color: #badbcc;
+}
+
+.border-text {
+  border: 1px solid black;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container:hover {
+  background-color: #666;
+  cursor: pointer;
+}
+
+.container p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.alert:hover {
+  box-shadow: 0px 0px 10px 0px rgb(188, 154, 154);
+  transform: scale(1.05);
+}
+
+.alert-heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.alerttext {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header-banner-wrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .App {
+    font-size: 12px;
+  }
+  .alert {
+    width: 90%;
+    margin: 10px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .flagpng img {
+    width: 80px;
+  }
+}
